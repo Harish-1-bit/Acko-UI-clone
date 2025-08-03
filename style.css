@@ -1005,6 +1005,7 @@
             
             .under-t2 {
                 padding: 10px;
+                padding-top: 10%;
                 align-items: center;
                 font-size: 0.6rem;
                 flex-direction: column;
