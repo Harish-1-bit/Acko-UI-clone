@@ -194,7 +194,7 @@
 
 
         .parent {
-            padding-inline: 20%;
+            padding-inline: 10%;
 
             width: 100%;
             display: grid;
@@ -451,7 +451,7 @@
             width: 100px;
         }
 
-        /* Features2 Section */
+
         .features2 {
             padding-block: 20px;
             height: 225vh;
@@ -516,7 +516,7 @@
             cursor: pointer;
         }
 
-        /* Gift Banner */
+
         .gift-banner {
             width: 100%;
             display: flex;
@@ -845,7 +845,7 @@
             }
         }
 
-        /* Medium Desktop/Laptop (1000px and below) */
+
         @media (max-width: 1000px) {
             .parent {
                 display: flex;
@@ -883,13 +883,13 @@
             }
         }
 
-        /* Tablet (768px and below) */
+
         @media (max-width: 768px) and (min-width: 400px) {
             .homepage nav {
                 gap: 50px;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                /* padding: 0 2rem; */
+
             }
             .text2 {
                 margin-left: 0;
@@ -986,8 +986,6 @@
                 height: 50vh;
             }
         }
-
-        /* Mobile (450px and below) */
         @media (max-width: 450px) and (min-width: 320px) {
             body {
                 height: max-content;
@@ -1005,7 +1003,7 @@
             
             .under-t2 {
                 padding: 10px;
-                padding-top: 10%;
+                justify-content: center;
                 align-items: center;
                 font-size: 0.6rem;
                 flex-direction: column;
