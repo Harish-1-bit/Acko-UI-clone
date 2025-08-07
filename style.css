@@ -93,21 +93,21 @@
             display: none;
         }
 
-        /* Homepage - Desktop First */
+
         .homepage {
             background: linear-gradient(180deg, #140f2e 6.74%, rgb(42, 32, 99) 55%, rgb(92, 54, 196));
             height: 210vh;
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
         .homepage nav {
             height: 11vh;
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content:;
             align-items: center;
             gap: 150px;
         }
@@ -167,13 +167,15 @@
 
 
         .features {
+            height: max-content;
+
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
         .text {
-            padding-bottom: 15px;
+            padding-bottom:15px;
             display: flex;
             flex-direction: column;
         }
@@ -194,9 +196,9 @@
 
 
         .parent {
-            padding-inline: 10%;
-
-            width: 100%;
+            height: 55vh;
+            margin-inline: 10%;
+            width: 80%;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -1359,7 +1361,7 @@
             
         }
 
-        /* Focus styles for accessibility */
+
         button:focus, 
         .gribx:focus,
         .t1:focus {
@@ -1367,12 +1369,3 @@
             outline-offset: 2px;
         }
 
-        /* Accessibility improvements */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                scroll-behavior: auto;
-                transition: none !important;
-                animation: none !important;
-            }
-        }
-    
