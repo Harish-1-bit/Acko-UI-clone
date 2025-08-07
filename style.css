@@ -15,7 +15,7 @@
             overflow-x: hidden;
         }
 
-
+        /* Desktop-First Base Styles */
         .b1 {
             height: 12vh;
             width: 100%;
@@ -53,7 +53,7 @@
         }
 
         .but1 {
-            width:max-content;
+            width: 16.3%;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -93,20 +93,22 @@
             display: none;
         }
 
-
+        /* Homepage - Desktop First */
         .homepage {
             background: linear-gradient(180deg, #140f2e 6.74%, rgb(42, 32, 99) 55%, rgb(92, 54, 196));
             height: 210vh;
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            align-items: center;
+            justify-content: space-around;
         }
 
         .homepage nav {
             height: 11vh;
             width: 100%;
             display: flex;
+            justify-content: space-around;
             align-items: center;
             gap: 150px;
         }
@@ -164,17 +166,15 @@
             cursor: pointer;
         }
 
-
+        /* Features Section - Desktop */
         .features {
-            height: max-content;
-
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
         .text {
-            padding-bottom:15px;
+            padding-bottom: 15px;
             display: flex;
             flex-direction: column;
         }
@@ -193,14 +193,12 @@
             color: white;
         }
 
-
         .parent {
-            height: 55vh;
-            margin-inline: 10%;
-            width: 80%;
+
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 175px);
+            grid-template-rows: repeat(2, 175px);
             gap: 20px;
         }
 
@@ -269,7 +267,6 @@
             width: 100px;
         }
 
-
         .div1 {
             grid-column: span 2 / span 2;
         }
@@ -333,9 +330,8 @@
             background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #FF0000, #6600FF, #1A00FF, #FFDD00);
         }
 
-
+        /* Tesla Section */
         .tesla-img {
-            margin-inline: 10%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -375,6 +371,7 @@
             align-self: flex-start;
         }
 
+        /* Below Tesla */
         .below-tesla {
             text-align: center;
             color: white;
@@ -409,10 +406,8 @@
             height: auto;
         }
 
-
+        /* Card Section */
         .card- {
-            height: 28vh;
-            margin-inline: 10%;
             display: flex;
             width: 85%;
             justify-content: center;
@@ -420,7 +415,7 @@
         }
 
         .card- .gribx {
-            height: 100%;
+            height: 88%;
             width: 50%;
             padding-top: 15px;
             padding-left: 15px;
@@ -453,7 +448,7 @@
             width: 100px;
         }
 
-
+        /* Features2 Section */
         .features2 {
             padding-block: 20px;
             height: 225vh;
@@ -518,7 +513,7 @@
             cursor: pointer;
         }
 
-
+        /* Gift Banner */
         .gift-banner {
             width: 100%;
             display: flex;
@@ -607,6 +602,8 @@
             border: none;
             cursor: pointer;
         }
+
+        /* User Section */
         .user {
             height: 65vh;
             width: 100%;
@@ -684,6 +681,7 @@
             width: 450px;
         }
 
+        /* Footer */
         footer {
             padding-top: 50px;
             background-color: #121212;
@@ -835,6 +833,9 @@
             display: none;
         }
 
+        /* DESKTOP TO MOBILE RESPONSIVE BREAKPOINTS */
+
+        /* Large Desktop (1200px+) - Keep original layout */
         @media (max-width: 1200px) and (min-width: 1001px) {
             #pro {
                 display: none;
@@ -847,7 +848,7 @@
             }
         }
 
-
+        /* Medium Desktop/Laptop (1000px and below) */
         @media (max-width: 1000px) {
             .parent {
                 display: flex;
@@ -885,13 +886,13 @@
             }
         }
 
-
+        /* Tablet (768px and below) */
         @media (max-width: 768px) and (min-width: 400px) {
             .homepage nav {
                 gap: 50px;
                 flex-wrap: wrap;
                 justify-content: space-between;
-
+                /* padding: 0 2rem; */
             }
             .text2 {
                 margin-left: 0;
@@ -908,7 +909,6 @@
                 font-size: 0.85rem;
             }
             .parent {
-                margin: 0px;
                 align-items: center;
             }
             .gribx {
@@ -919,14 +919,12 @@
                 font-size: 2.2rem;
             }
             .tesla-img {
-                margin: 5%;
                 width: 90%;
                 padding: 2rem;
                 height: auto;
                 min-height: 200px;
             }
             .card- {
-                
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
@@ -981,13 +979,9 @@
                 width: 45%;
                 min-width: 150px;
             }
-            footer{
-                height: fit-content;
-            }
-            .last-footer{
-                height: 50vh;
-            }
         }
+
+        /* Mobile (450px and below) */
         @media (max-width: 450px) and (min-width: 320px) {
             body {
                 height: max-content;
@@ -1005,7 +999,6 @@
             
             .under-t2 {
                 padding: 10px;
-                justify-content: center;
                 align-items: center;
                 font-size: 0.6rem;
                 flex-direction: column;
@@ -1084,7 +1077,6 @@
             }
             
             .parent {
-                padding-inline: 10%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -1097,7 +1089,6 @@
             }
             
             .tesla-img {
-                margin: 5%;
                 width: 95%;
                 padding: 1.5rem;
                 gap: 15px;
@@ -1128,7 +1119,6 @@
             }
             
             .card- {
-                margin:2%;
                 padding-block: 30px;
                 flex-direction: column;
                 align-items: center;
@@ -1340,7 +1330,7 @@
             }
         }
         
-
+        /* Extra Small Mobile (below 320px) */
         @media (max-width: 319px) {
             .gribx {
                 width: 95%;
@@ -1361,10 +1351,20 @@
             
         }
 
-
+        /* Focus styles for accessibility */
         button:focus, 
         .gribx:focus,
         .t1:focus {
             outline: 2px solid #17ff88;
             outline-offset: 2px;
         }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                scroll-behavior: auto;
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    
