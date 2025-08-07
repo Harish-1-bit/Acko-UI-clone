@@ -165,12 +165,14 @@
             padding: 11px 20px;
             cursor: pointer;
         }
-
-        /* Features Section - Desktop */
         .features {
+            height: max-content;
+            width: 100%;
             display: flex;
+            justify-content: center;
             flex-direction: column;
             gap: 20px;
+            align-items: center;
         }
 
         .text {
@@ -194,10 +196,9 @@
         }
 
         .parent {
-
-            width: 100%;
+            width:80%;
             display: grid;
-            grid-template-columns: repeat(6, 175px);
+            grid-template-columns: repeat(6,1fr);
             grid-template-rows: repeat(2, 175px);
             gap: 20px;
         }
@@ -985,6 +986,7 @@
         @media (max-width: 450px) and (min-width: 320px) {
             body {
                 height: max-content;
+                width: 100%;
             }
             
             .b1 nav .but1 {
@@ -999,6 +1001,7 @@
             
             .under-t2 {
                 padding: 10px;
+                justify-content: center;
                 align-items: center;
                 font-size: 0.6rem;
                 flex-direction: column;
