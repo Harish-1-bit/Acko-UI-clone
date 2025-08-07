@@ -107,7 +107,6 @@
             height: 11vh;
             width: 100%;
             display: flex;
-            justify-content:;
             align-items: center;
             gap: 150px;
         }
@@ -270,7 +269,7 @@
             width: 100px;
         }
 
-        /* Grid Specific Layouts - Desktop (PRESERVED ORIGINAL) */
+
         .div1 {
             grid-column: span 2 / span 2;
         }
@@ -334,7 +333,7 @@
             background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #FF0000, #6600FF, #1A00FF, #FFDD00);
         }
 
-        /* Tesla Section */
+
         .tesla-img {
             margin-inline: 10%;
             display: flex;
@@ -412,6 +411,7 @@
 
 
         .card- {
+            height: 28vh;
             margin-inline: 10%;
             display: flex;
             width: 85%;
@@ -420,7 +420,7 @@
         }
 
         .card- .gribx {
-            height: 88%;
+            height: 100%;
             width: 50%;
             padding-top: 15px;
             padding-left: 15px;
@@ -1340,7 +1340,7 @@
             }
         }
         
-        /* Extra Small Mobile (below 320px) */
+
         @media (max-width: 319px) {
             .gribx {
                 width: 95%;
